@@ -52,7 +52,7 @@ span.resume-tabbed-line {
     break-inside: avoid-column;
     font-family: "UniversLTStd-Light", sans-serif;
     font-size: 12px;
-    margin-left: -15px;
+    margin-left: 0px;
 
 }
 
@@ -64,8 +64,9 @@ span.wrapped-desc {
     width: calc(100% - ( 16px * 3 ));
     font-family: "UniversLTStd-Light", sans-serif;
     font-size: 12px;
-    margin-left: -15px;
+    margin-left: 0px;
     padding-left: 15px;
+    padding-bottom: 5px;
 
 }
 
@@ -73,8 +74,8 @@ p {
   font-size: 12px;
   margin: 0px 0px 0px 0px;
   font: monospace, sans-serif;
-  margin-left: -15px;
-  padding-left: 15px;
+  margin-left: 0px;
+  padding-left: 0px;
   padding-top: 15px;
   padding-right: 30px;
   padding-bottom: 5px;
@@ -177,13 +178,18 @@ font-size: 16px;
 margin: 0px 0px 0px 0px;
 text-decoration-color:black;
 color:black;
-margin-left: -15px;
+margin-left: 0px;
 padding-left: 0px;
-padding-top: 15px;
-padding-bottom: 5px;
 color: black;
+padding-top: 15px;
 
 }
+
+
+.h2extra {
+padding-top: 50px;
+}
+
 
 
 .title {
@@ -304,14 +310,6 @@ color: black;
       -webkit-filter: grayscale(0);
 
     }
-
-    .footer {
-    
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      color: white;
-      text-align: center;
 
 
 </style>
