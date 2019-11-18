@@ -1,0 +1,77 @@
+body {
+  font-family: "courier", "courier", sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+.wrapper {
+  width: 902px;
+}
+
+.textwrapper {
+  padding: 20px 20px 20px;
+}
+
+.title {
+  font: bold 46px/40px "courier", "Arial", sans-serif;
+  float: center;
+  background: #FF98BA;
+  letter-spacing: -2px;
+  margin: 0 0 10px 0;
+  padding: 6px 6px 8px;
+}
+
+.title a {
+  text-decoration: none;
+  color: #222;
+}
+
+.canvas-container{
+    width:900;
+    height:540;
+}
+
+.canvas {
+ border: 0;
+ padding: 0;
+ margin: 0;
+}
+
+.footer {
+  font: bold 40px/34px "Helvetica", "Arial", sans-serif;
+  letter-spacing: -2px;
+  margin: 0 0 0 0;
+  padding: 6px 6px 8px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #222;
+}
+
+.imgBlock {
+    display: inline-block;
+    position: relative;
+    padding: 30px 0 30px 0;
+}
+
+.bigimg {
+    height: 435px;
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+.img {
+    display: inline-block;
+    width: 600px;
+    margin: 0 20px 0 0;
+}
+
+.textbox {
+width: 800px;
+height: 500px;
+float: left;
+}
+
+
+
