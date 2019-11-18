@@ -24,7 +24,7 @@
 
 body {
   background:  white;
-  font-family: "UniversLTStd-Light", serif;
+  font-family: "UniversLTStd-Light", sans-serif;
 }
 span.resume-tabbed-line {
     position: relative;
@@ -35,7 +35,7 @@ span.resume-tabbed-line {
     width: 100%;
     float: left;
     clear: both;
-    font-family: "UniversLTStd-Light", serif;
+    font-family: "UniversLTStd-Light", sans-serif;;
     font-size: 12px;
     margin-top: 15px;
   }
@@ -79,7 +79,7 @@ p {
   padding-right: 30px;
   padding-bottom: 5px;
     line-height: 1.5;
-font: "UniversLTStd-Light", serif;
+font: "UniversLTStd-Light", sans-serif;;
 }
 
 .description {
@@ -92,7 +92,7 @@ font: "UniversLTStd-Light", serif;
   padding-right: 30px;
   padding-bottom: 5px;
     line-height: 1.5;
-font: "UniversLTStd-Light", serif;
+font: "UniversLTStd-Light", sans-serif;;
 }
 
 #goleft35 {
@@ -111,7 +111,7 @@ h3 {
   font:serif;
   letter-spacing: px;
   line-height: 1.5;
-  font: "UniversLTStd-Light", serif;
+  font: "UniversLTStd-Light", sans-serif;;
 }
 
 .biography
@@ -142,9 +142,16 @@ a:link {
     color:black;
 }
 
-a:visited {
-    text-decoration: none;
+span:link {
+    color:pink;
+    text-decoration-color:pink;
 }
+
+span:link {
+    color:pink;
+    text-decoration-color:pink;
+}
+
 
 a:hover {
     color: BLUE;
@@ -221,10 +228,10 @@ color: black;
     font-size: 10px;
     bottom: 0px;
     right: 0px;
-    clear: left;
+    clear: right;
     padding-right: 5px;
     padding-bottom: 5px;
-    font-family: "UniversLTStd-Light", serif;
+    font-family: "UniversLTStd-Light", sans-serif;;
 
 }
 
@@ -241,7 +248,6 @@ color: black;
   color: red;
 
 }
-
 
 .imgwrap {
     position: relative;
@@ -284,9 +290,7 @@ color: black;
 }
 
 
-
 }
-
 .video {
   float:left;
   padding: 0px 0px 10px 0px;
@@ -301,9 +305,13 @@ color: black;
 
     }
 
-
-
-
+    .footer {
+    
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: white;
+      text-align: center;
 
 
 </style>
