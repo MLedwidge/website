@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'akzidenz-grotesk_bq_lightRg';
-    src: url('akzidenzgrotesk-light-webfont.woff2') format('woff2'),
-         url('akzidenzgrotesk-light-webfont.woff') format('woff');
+    src: url('SpaceGrotesk-Light.otf') format('woff2'),
+         url('SpaceGrotesk-Light.otf') format('woff');
     font-weight: normal;
     font-style: normal;
 

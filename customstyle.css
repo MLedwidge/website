@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'akzidenz-grotesk_bq_lightRg';
-    src: url('assets/fonts/') format('woff2'),
-         url('assets/fonts/akzidenzgrotesk/akzidenzgrotesk-light-webfont.woff') format('woff');
+    font-family: 'UniversLTStd-Light';
+    src: url('assets/fonts/') format('otf'),
+         url('assets/fonts/akzidenzgrotesk/UniversLTStd-Light') format('otf');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,7 +23,7 @@
 }
 
 body {
-  background:  white;
+  background:  #d3dcde;
   font-family: "UniversLTStd-Light", sans-serif;
 }
 span.resume-tabbed-line {
