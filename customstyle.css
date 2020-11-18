@@ -6,6 +6,12 @@
     font-style: normal;
 }
 
+
+a.link {
+  color:red;
+    background: pink
+}
+
 #top {
   border-style: solid;
   border-color: black;
@@ -23,8 +29,10 @@
 }
 
 body {
-  background:  #e6e6e6;
+  background: white;
+  color: black;
   font-family: "UniversLTStd-Light", sans-serif;
+
 }
 span.resume-tabbed-line {
     position: relative;
@@ -71,7 +79,7 @@ span.wrapped-desc {
 }
 
 p {
-  font-size: 12px;
+  font-size: 16px;
   margin: 0px 0px 0px 0px;
   font: monospace, sans-serif;
   margin-left: 0px;
@@ -115,6 +123,11 @@ h3 {
   font: "UniversLTStd-Light", sans-serif;;
 }
 
+#contact {
+  font-size: 12px;
+
+}
+
 .biography
 {font: monospace, sans-serif;
 font-size: 16px;
@@ -134,9 +147,9 @@ a {
 }
 
 
-A.class1:link  {text-decoration: none; text-decoration: underline; text-decoration-color:#7a7a7a;}
+A.class1:link  {text-decoration: none; text-decoration: none; text-decoration-color:blue;}
 A.class1:visited {text-decoration: none; text-decoration: underline; text-decoration-color:#7a7a7a;}
-A.class1:hover {color: BLUE;text-decoration: none; transition: all 0.4s ease;}
+A.class1:hover {color: BLUE;text-decoration: none; transition: all 0.1s ease;}
 A.class1:active {text-decoration: none; color: white;}
 
 b {
@@ -169,6 +182,13 @@ a:hover {
     text-decoration: none;
     transition: all 0.4s ease;
 }
+
+p:hover {
+    color: black;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
 
 
 h1 {
@@ -256,12 +276,9 @@ padding-top: 50px;
   line-height: 200%;
   letter-spacing: normal;s
   border-style: solid;
-  border-color: red;
   border-width: 0px 0px 0px 0px ;
   margin-left: -15px;
   padding-left: 15px;
-  text-decoration-color:red;
-  color: red;
 
 }
 
@@ -318,8 +335,6 @@ padding-top: 50px;
 .img:hover {
     filter: none;
       -webkit-filter: grayscale(0);
-
     }
-
 
 </style>
