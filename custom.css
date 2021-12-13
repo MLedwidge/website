@@ -2,7 +2,6 @@
     font-family: 'akzidenz-grotesk_bq_lightRg';
     src: url('assets/fonts/akzidenzgrotesk/akzidenzgrotesk-light-webfont.woff2') format('woff2'),
          url('assets/fonts/akzidenzgrotesk/akzidenzgrotesk-light-webfont.woff') format('woff');
-    font-weight: normal;
     font-style: normal;
 }
 
