@@ -151,31 +151,11 @@ a {
 
 A.class1:link  {text-decoration: none; text-decoration: none; text-decoration-color:blue;}
 A.class1:visited {text-decoration: none; text-decoration: underline; text-decoration-color:#7a7a7a;}
-A.class1:hover {color: BLUE;text-decoration: none; transition: all 0.01s ease;}
-A.class1:active {text-decoration: none; color: white;}
+A.class1:hover {color: red;text-decoration: none; transition: all 0.001s;}
+A.class1:active {text-decoration: dashed underline; color: blue;}
 
 b {
     color:black;
-}
-
-p:link{
-  color:red;
-  -webkit-text-stroke-width: 0.9px;
-  -webkit-text-stroke-color: black;
-
-}
-a:link {
-    color:black;
-}
-
-span:link {
-    color:pink;
-    text-decoration-color:pink;
-}
-
-span:link {
-    color:pink;
-    text-decoration-color:pink;
 }
 
 
@@ -189,6 +169,7 @@ p:hover {
     color: black;
     text-decoration: none;
     transition: all 0.4s ease;
+
 }
 
 
