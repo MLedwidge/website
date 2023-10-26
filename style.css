@@ -23,7 +23,7 @@ body {
 
 .title a {
   text-decoration: none;
-  color: #222;
+  color: red;
 }
 
 .canvas-container{
@@ -72,6 +72,3 @@ width: 800px;
 height: 500px;
 float: left;
 }
-
-
-

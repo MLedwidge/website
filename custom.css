@@ -5,19 +5,6 @@
     font-style: normal;
 }
 
-body {
-  font-family: "akzidenz-grotesk_bq_lightRg", sans-serif;
-  font-size: 16px;
-  background-color: white;
-  }
-
-.blue {
- color: blue;
-
- }
-
-
-
 
 p {
   margin:0px 0px 0px 2px;
@@ -28,7 +15,7 @@ a {
 }
 
 a:link {
-    color:#FF0000;
+    color:yellow
 }
 
 a:visited {
@@ -36,7 +23,7 @@ a:visited {
 }
 
 a:hover {
-    color: #FFFFFF;
+    color: yellow;
 }
 
 .textwrapper {
