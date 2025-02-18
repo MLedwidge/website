@@ -4,7 +4,6 @@
   border-color: #101010;
   border-width: 0px 0px 1px 0px ;
   background-color: var(--base-variant);
-  var(--base-variant)
 }
 
 #firstproject {
@@ -28,7 +27,7 @@
 :root{
   --base-color: #fafafa;
   --base-variant: #ffea00;
-  --text-color: ##101010;
+  --text-color: #101010;
   --secondary-text: #232738;
   --primary-color: #101010;
   --accent-color: #0071ff;
@@ -175,7 +174,6 @@ p2{
 
 .description {
   font-size: 16px;
-  font:  sans-serif;
   margin-left: 0px;
   margin-right: 10px;
   padding-top: 15px;
@@ -204,7 +202,7 @@ h2 {
 font-size: 18px;
 margin: 0px 0px 0px 0px;
 margin-left: 0px;
-padding-top: 15px;
+padding-top: 45px;
 color: var(--text-color);
 font-family: "neue-haas-unica", sans-serif;
 font-weight: 600;
@@ -308,6 +306,7 @@ p.bio-paragraph {
   padding-bottom: 200px;
 }
 
+
     @media (max-width: 992px) {
 
 
@@ -368,17 +367,15 @@ p.bio-paragraph {
         font-size: 16px;
       }
 
-      }
 
-      .h2{
-        padding-top: 0px;
-        font-size: 35px;
-      }
 
+      h2{
+        padding-top: 30px;
+        font-size: 20px;
+      }
 
       .description{
       font-size: 20px;
-      font:  sans-serif;
       padding-top: 50px;
       padding-right: 20px;
       padding-bottom: 15px;
@@ -387,7 +384,6 @@ p.bio-paragraph {
         line-height: 1.4;
         font-family: "neue-haas-unica", sans-serif;
     font-weight: 400;
-
     font-style: normal;
      }
 
@@ -457,6 +453,6 @@ p.bio-paragraph {
        padding: 0px;
      }
 
-
+}
 
 </style>
