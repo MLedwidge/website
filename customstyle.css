@@ -153,7 +153,7 @@ span.wrapped-desc {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
 
   font:  sans-serif;
   margin-left: 0px;
@@ -189,7 +189,7 @@ font-style: normal;
 
 
 h1 {
-font-size: 15px;
+font-size: 18px;
 margin: 0px 0px 0px 0px;
 color: #101010;
 margin-left: -15px;
@@ -201,7 +201,7 @@ font-style: normal;
 }
 
 h2 {
-font-size: 15px;
+font-size: 18px;
 margin: 0px 0px 0px 0px;
 margin-left: 0px;
 padding-top: 15px;
@@ -213,7 +213,7 @@ font-style: normal;
 
 
 h3 {
-  font-size: 15px;
+  font-size: 18px;
   margin: 0px 0px 0px 0px;
   margin-left: -15px;
   padding-top: 15px;
@@ -245,7 +245,7 @@ a:hover {
 
 
 .title.menutitle {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: normal;
   text-decoration: none;
 
@@ -261,7 +261,7 @@ a:hover {
 
 
 .title.menuitem {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 200%;
   letter-spacing: normal;s
   border-style: solid;
@@ -304,30 +304,69 @@ a:hover {
   transition: all 0.6s ease;
 }
 
-.bio-paragraph {
+p.bio-paragraph {
   padding-bottom: 200px;
 }
 
     @media (max-width: 992px) {
 
-
-      .project-title {
-          font-size: 35px;
-          border-top: 1px;
-          padding-top: 50px;
+      .col-md-3 {
+           border-bottom: 1px solid #101010;
+           padding-bottom:  50px;
       }
 
-      .p{
+      .menuitem a {
+        font-size: 28px;
+      font-weight: 500;line-height: 2;
+
+
+    }
+.menuitem {
+  border: 2px;
+
+}
+.title.menutitle {
+  font-size: 28px;
+  font-weight: 500;
+}
+      .project-title {
+          font-size: 28px;
+          border-top: 1px;
+          padding-top: 50px;
+
+      }
+
+      p{
+        padding-top: 0px;
+        font-size: 35px;
+        font-family: "neue-haas-unica", sans-serif;
+    font-weight: 400;
+
+      }
+
+      p.bio-paragraph {
+        padding-bottom: 50px;
+      }
+
+      p2{
+        font-size: 16px;
+      }
+
+      }
+
+      .h2{
         padding-top: 0px;
         font-size: 35px;
       }
 
+
       .description{
-      font-size: 18px;
+      font-size: 20px;
       font:  sans-serif;
       padding-top: 50px;
       padding-right: 20px;
-      padding-bottom: 5px;
+      padding-bottom: 15px;
+      padding-top: 15px;
       margin-left: 0px;margin-right: 0px;
         line-height: 1.4;
         font-family: "neue-haas-unica", sans-serif;
@@ -340,19 +379,63 @@ a:hover {
        padding-left: 0px;
        padding-bottom: 30px;
        padding-top: 50px;
-       font-size: 20px;
+       font-size: 28px;
      }
 
 
     .bio-paragraph {
       padding-left: 0px;
       padding-bottom: 0px;
+      font-size: 20px;
     }
 
      .col-md-4{
        padding: 0px;
      }
-    }
+
+
+     span.resume-tabbed-line {
+         position: relative;
+         display: inline;
+         page-break-inside: avoid-column;
+         -webkit-column-break-inside: avoid-column;
+         break-inside: avoid-column;
+         width: 100%;
+         float: left;
+         clear: both;
+         font-size: 16px;
+         margin-top: 15px;
+         color: var(--text-color);
+         font-family: "neue-haas-unica", sans-serif;
+       }
+
+       span.wrapped-tab-1 {
+         position: relative;
+         display: block;
+         float: left;
+         clear: right;
+         width: calc( 16px * 2.625);
+         height: 100%;
+         page-break-inside: avoid-column;
+         -webkit-column-break-inside: avoid-column;
+         break-inside: avoid-column;
+         font-size: 16px;
+         margin-left: 0px;
+         color: var(--text-color);
+         font-family: "neue-haas-unica", sans-serif;
+         font-weight: 500;
+
+     }
+     span.wrapped-desc {
+         position: relative;
+         display: inline;
+         float: left;
+         clear: right;
+         width: calc(100% - ( 16px * 3 ));
+         font-size: 16px;
+         margin-left: 0px;
+           font-family: "neue-haas-unica", sans-serif;
+     }
 
      .col-md-4{
        padding: 0px;
