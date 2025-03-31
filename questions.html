@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Question</title>
+    <style>
+        body {
+            font-family: "neue-haas-unica", sans-serif;
+            margin: 20px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .question {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .log {
+            margin-top: 40px;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .log-item {
+            margin-bottom: 20px;
+        }
+
+        .date {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .image-preview {
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        input[type="file"] {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="dateTime"></h1>  <!-- This will show the date & time -->
+        <div class="question" id="question"></div>
+
+        <!-- Image Upload Section -->
+        <input type="file" id="imageUpload" accept="image/*">
+        <button onclick="saveImage()">Attach Image</button>
+
+        <div class="log" id="log"></div>
+    </div>
+
+    <script>
+        const questions = [
+            "What defines our understanding of space?",
+            "How does technology reshape memory?",
+            "What does time feel like in a city?",
+            "How does architecture reflect cultural values?",
+            "What role do images play in historical narratives?"
+        ];
+
+        function updateDateTime() {
+            const now = new Date();
+            const formattedDate = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+            const formattedTime = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+            document.getElementById("dateTime").textContent = `${formattedDate}, ${formattedTime}`;
+        }
+
+        function getTodayQuestion() {
+            const today = new Date();
+            const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000);
+            return questions[dayOfYear % questions.length];
+        }
+
+        function updateLog() {
+            const logContainer = document.getElementById("log");
+            const today = new Date().toISOString().split('T')[0];
+            const todayQuestion = getTodayQuestion();
+
+            // Load existing log from localStorage
+            let logHistory = JSON.parse(localStorage.getItem("logHistory")) || [];
+
+            // Check if today's question is already logged
+            const alreadyLogged = logHistory.some(entry => entry.date === today);
+            if (!alreadyLogged) {
+                logHistory.push({ date: today, question: todayQuestion, image: null });
+                localStorage.setItem("logHistory", JSON.stringify(logHistory));
+            }
+
+            // Clear and re-populate the log
+            logContainer.innerHTML = "";
+            logHistory.forEach(entry => {
+                const logItem = document.createElement("div");
+                logItem.classList.add("log-item");
+                logItem.innerHTML = `<span class="date">${entry.date}</span>: ${entry.question}`;
+
+                // Add image if available
+                if (entry.image) {
+                    const img = document.createElement("img");
+                    img.src = entry.image;
+                    img.classList.add("image-preview");
+                    logItem.appendChild(img);
+                }
+
+                logContainer.appendChild(logItem);
+            });
+        }
+
+        function saveImage() {
+            const fileInput = document.getElementById("imageUpload");
+            const file = fileInput.files[0];
+
+            if (!file) {
+                alert("Please select an image.");
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const imageData = event.target.result;
+                const today = new Date().toISOString().split('T')[0];
+
+                let logHistory = JSON.parse(localStorage.getItem("logHistory")) || [];
+                const entryIndex = logHistory.findIndex(entry => entry.date === today);
+
+                if (entryIndex !== -1) {
+                    logHistory[entryIndex].image = imageData;
+                    localStorage.setItem("logHistory", JSON.stringify(logHistory));
+                    updateLog();
+                }
+            };
+
+            reader.readAsDataURL(file);
+        }
+
+        document.getElementById("question").textContent = getTodayQuestion();
+        updateLog();
+        updateDateTime();
+        setInterval(updateDateTime, 1000); // Update time every second
+    </script>
+</body>
+</html>
