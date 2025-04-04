@@ -1,7 +1,7 @@
 
 #top {
   border-style: solid;
-  border-color: #101010;
+  border-color: var( --text-color);
   border-width: 0px 0px 1px 0px ;
   background-color: var(--base-variant);
 }
@@ -26,16 +26,16 @@
 
 :root{
   --base-color: #fafafa;
-  --base-variant: #ffea00;
+  --base-variant: #fafafa;
   --text-color: #101010;
   --secondary-text: #232738;
   --primary-color: #101010;
   --accent-color: #0071ff;
 }
 .darkmode{
-  --base-color: #424241;
-  --base-variant: #6316b5;
-  --text-color: #e7e6e4;
+  --base-color: #211a18;
+  --base-variant: #211a18;
+  --text-color: #dad4c8;
   --secondary-text: #a4a5b8;
   --primary-color: #3a435d;
   --accent-color: #0071ff;
