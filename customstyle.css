@@ -27,7 +27,7 @@
 :root{
   --base-color: #fafafa;
   --base-variant: #fafafa;
-  --text-color: #101010;
+  --text-color: #0b0b0b;
   --secondary-text: #232738;
   --primary-color: #101010;
   --accent-color: #0071ff;
@@ -261,12 +261,11 @@ a:hover {
 .title.menuitem {
   font-size: 18px;
   line-height: 200%;
-  letter-spacing: normal;s
+  letter-spacing: normal;
   border-style: solid;
   border-width: 0px 0px 0px 0px ;
   margin-left: -15px;
   padding-left: 15px;
-
 }
 
 .imgwrap {
